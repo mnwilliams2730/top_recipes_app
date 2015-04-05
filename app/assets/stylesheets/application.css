@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    background-image: url("https://farm2.staticflickr.com/1034/4593033016_22c0eeab58_o.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+body {
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#boxed {
+  border: 4px solid white;
+  border-radius: 25px;
+  width: 500px;
+  margin: 10px auto;
+  margin-top: 220px;
+  text-align:center;
+  padding:20px;
+  background:rgba(0, 0, 0, 0.6);
+}
+
+#boxed_results{
+  border: 4px solid white;
+  border-radius: 25px;
+  background-color:#dbccbb;
+  width: 1000px;
+  margin: 10px auto;
+  text-align:center;
+  padding:20px;
+  color: black;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: red;
+}
+
+#results_hed {
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#rank {
+	font-size: 1.2em;
+}
+
+.breadcrumb {
+  font-size: 1.2em;
+}
+
+.breadcrumb a {
+  color: white;
+}
+
+.food {
+	width: 300px;
+}
+
+
+.each_item {
+	border-bottom: 3px dotted #29293D;
+	padding: 30px;
+	
+}

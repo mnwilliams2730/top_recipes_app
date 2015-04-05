@@ -1,0 +1,20 @@
+<div id="boxed">
+	<h1>TOP 30 RECIPES</h1>
+	<p>Your best friend for cooking great meals when you don't know where to start. Search for a dish and then check out the list.</p>
+
+	<p><em>(Rankings are based on a recipe's popularity on social media.)</em></p>
+	<form action="/top_recipes" method="get">
+  		<label><input name="search" size="40"></label>
+  		<button>Search</button>
+ 	</form>
+</div>
+
+<ol id="rank">
+  <% @results.each do |result| %>
+    <li class="each_item">
+    	<a href="<%= result['source_url'] %>"><img class="food" src="<%=result['image_url'] %>"></a>
+		<div id="results_hed"><a href="<%= result['source_url'] %>"><%= result['title'] %></a></div><br> 
+    </li> 
+  <% end %>
+</ol>
+</div>
